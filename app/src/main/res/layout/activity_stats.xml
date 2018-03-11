@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textStatsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="@string/textStatsTitle"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textCorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="41dp"
+        android:text="@string/textCorrect"
+        android:textSize="18sp"
+        android:layout_below="@+id/textStatsTitle"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textCorrect"
+        android:layout_below="@+id/textCorrect"
+        android:layout_marginTop="29dp"
+        android:text="@string/textPercentage"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textQuizMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="91dp"
+        android:text="@string/textQuizMessage"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_below="@+id/textPercentage"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnQuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:layout_toEndOf="@+id/textPercentage"
+        android:text="@string/btnQuit" />
+
+    <Button
+        android:id="@+id/btnTry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:text="@string/btnTry"
+        android:layout_alignBaseline="@+id/btnQuit"
+        android:layout_alignBottom="@+id/btnQuit"
+        android:layout_toEndOf="@+id/textStatsTitle" />
+
+    <ProgressBar
+        android:id="@+id/progressStats"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textQuizMessage"
+        android:layout_alignStart="@+id/textQuizMessage"
+        android:layout_marginRight="80dp" />
+
+</RelativeLayout>

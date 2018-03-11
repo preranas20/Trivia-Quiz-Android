@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="190dp"
+        android:layout_height="80dp"
+        android:text="@string/textTitle"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_marginBottom="51dp"
+        android:layout_marginStart="47dp"
+        android:text="@string/btnExit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:text="@string/btnStart"
+        android:layout_alignBaseline="@+id/btnExit"
+        android:layout_alignBottom="@+id/btnExit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="35dp" />
+
+    <ProgressBar
+        android:id="@+id/progressLoad"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/textTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:id="@+id/textLoadStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TextLoadStatus"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_below="@+id/imageTrivia"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <ImageView
+        android:id="@+id/imageTrivia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/trivia"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textTitle"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
