@@ -1,9 +1,3 @@
-/*Homework 04
-QuestionUtil.java
-authors:HW Group 8-
-        Prerana Singh
-        Vaijyant Tomar
- */
 
 
 
