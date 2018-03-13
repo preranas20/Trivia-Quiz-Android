@@ -1,9 +1,4 @@
-/*Homework 04
-TriviaActivity.java
-authors:HW Group 8-
-        Prerana Singh
-        Vaijyant Tomar
- */
+
 
 package com.example.preranasingh.triviaquiz;
 
