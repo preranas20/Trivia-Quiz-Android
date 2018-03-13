@@ -1,9 +1,3 @@
-/*Homework 04
-Question.java
-authors:HW Group 8-
-        Prerana Singh
-        Vaijyant Tomar
- */
 
 package com.example.preranasingh.triviaquiz;
 
